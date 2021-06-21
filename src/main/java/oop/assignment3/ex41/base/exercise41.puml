@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution41 {
+    List: Alphabetical
+
+    Scanner(new File)
+    readNames(inputFile, names)
+    outputNames()
+
+}
+
+class NameSorter {
+    readNames
+    sort()
+}
+
+Solution41 <--o NameSorter
+@enduml
