@@ -22,20 +22,17 @@ public class solution42 {
 
     public static void outputValues(ArrayList<String> names) throws IOException {
 
-        // create a something to output to file ( FileWriter("fileName.txt") )
+        // create a function to output to file ( FileWriter("fileName.txt") )
 
         FileWriter output = new FileWriter("exercise41_output.txt");
 
-        output.write("Total of " + names.size() + " names\n");
-        output.write("--------------------\n");
-
-        for (String i : names) {
-
-            output.write(i + "\n");
-
-        }
+        // include the parse method to modify exercise42_input.txt
 
         output.close();
 
     }
+
+    /*
+    Separate class to parse the date without CSV parser
+     */
 }
