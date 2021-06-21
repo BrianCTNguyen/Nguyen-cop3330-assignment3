@@ -1,11 +1,31 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
+class solution45 {
+    Word Finder
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+    print outputFile()
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+}
+class readFile {
+    Read Input txt
+
+    Scanner(input.txt)
+}
+class modifyFile {
+    Replace Function
+
+    modify() throws IOException
+
+}
+class outputFile {
+    Write to new File
+
+    output.write()
+}
+
+solution45 <--o outputFile
+readFile o--> modifyFile
+modifyFile o--> outputFile
+readFile o--> solution45
 @enduml

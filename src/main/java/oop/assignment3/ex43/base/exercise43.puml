@@ -1,11 +1,17 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
+class solution43{
+    WebsiteGenerator
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+    siteName()
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+    author()
+
+    createFolder(JS)
+
+    createFolder(CSS)
+
+    generateIndex.html()
+}
 @enduml

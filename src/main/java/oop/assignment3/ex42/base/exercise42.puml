@@ -1,5 +1,27 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
+class solution42 {
+    read: input file
 
+    Scanner()
+    callFucntion(output)
+
+}
+class output {
+    write: output file
+
+    FileWriter output(".txt")
+
+}
+class parse {
+    Sorting
+
+    createTableFunction()
+    close()
+}
+
+output <--o parse
+solution42 <--o output
+solution42 o--> parse
 @enduml
